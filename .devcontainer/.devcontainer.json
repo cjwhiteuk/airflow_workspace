@@ -1,5 +1,6 @@
 {
     "name": "Python 3.11 with Docker",
+    "forwardPorts": [8080],
     "dockerFile": "Dockerfile",
     "customizations": {
         "vscode": {
