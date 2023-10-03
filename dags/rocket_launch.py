@@ -9,6 +9,8 @@ from airflow.operators.http_operator import SimpleHttpOperator
 from airflow.operators.python import BranchPythonOperator
 from airflow.exceptions import AirflowSkipException
 from airflow.operators.python import ShortCircuitOperator
+from airflow.providers.google.cloud.transfers.local_to_gcs import LocalFilesystemToGCSOperator
+
 import json
 
 with DAG(
@@ -89,11 +91,17 @@ with DAG(
         ],
     )
 
+    upload_file = LocalFilesystemToGCSOperator(
+        task_id="upload_file",
+        src="/tmp/{{ ds }}.parquet",
+        dst="agustinir/launches/{{ ds }}.parquet",
+        bucket="aflow-training-rabo-2023-10-02",
+        gcp_conn_id='GoogleBigQuery',
+    )
     
-
     wait_for_data >> task_get_op
     task_get_op >> check_launches
     check_launches >> preprocess_data
     preprocess_data >> create_dataset
-    create_dataset >> create_table
-    create_table >> upsert_table
+    create_dataset >> [create_table, upload_file]
+    
