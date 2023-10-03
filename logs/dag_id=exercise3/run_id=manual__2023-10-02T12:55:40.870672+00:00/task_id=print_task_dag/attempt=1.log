@@ -1,0 +1,18 @@
+[2023-10-02T12:55:42.259+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: exercise3.print_task_dag manual__2023-10-02T12:55:40.870672+00:00 [queued]>
+[2023-10-02T12:55:42.266+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: exercise3.print_task_dag manual__2023-10-02T12:55:40.870672+00:00 [queued]>
+[2023-10-02T12:55:42.267+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-02T12:55:42.287+0000] {taskinstance.py:1350} INFO - Executing <Task(BashOperator): print_task_dag> on 2023-10-02 12:55:40.870672+00:00
+[2023-10-02T12:55:42.293+0000] {standard_task_runner.py:57} INFO - Started process 1210 to run task
+[2023-10-02T12:55:42.295+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'exercise3', 'print_task_dag', 'manual__2023-10-02T12:55:40.870672+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/exercise3.py', '--cfg-path', '/tmp/tmpbute2_mt']
+[2023-10-02T12:55:42.296+0000] {standard_task_runner.py:85} INFO - Job 12: Subtask print_task_dag
+[2023-10-02T12:55:42.339+0000] {task_command.py:410} INFO - Running <TaskInstance: exercise3.print_task_dag manual__2023-10-02T12:55:40.870672+00:00 [running]> on host e870058fa168
+[2023-10-02T12:55:42.427+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='exercise3' AIRFLOW_CTX_TASK_ID='print_task_dag' AIRFLOW_CTX_EXECUTION_DATE='2023-10-02T12:55:40.870672+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-10-02T12:55:40.870672+00:00'
+[2023-10-02T12:55:42.428+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-10-02T12:55:42.429+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "echo '<Task(BashOperator): print_task_dag> is running in the <DAG: exercise3> pipeline'"]
+[2023-10-02T12:55:42.438+0000] {subprocess.py:86} INFO - Output:
+[2023-10-02T12:55:42.439+0000] {subprocess.py:93} INFO - <Task(BashOperator): print_task_dag> is running in the <DAG: exercise3> pipeline
+[2023-10-02T12:55:42.440+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-10-02T12:55:42.469+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=exercise3, task_id=print_task_dag, execution_date=20231002T125540, start_date=20231002T125542, end_date=20231002T125542
+[2023-10-02T12:55:42.510+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-02T12:55:42.528+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check

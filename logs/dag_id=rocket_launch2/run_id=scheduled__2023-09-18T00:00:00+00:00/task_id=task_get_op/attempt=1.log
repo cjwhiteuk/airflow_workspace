@@ -1,0 +1,72 @@
+[2023-10-03T09:39:29.321+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T09:39:29.966+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T09:39:29.977+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:39:30.615+0000] {taskinstance.py:1350} INFO - Executing <Task(SimpleHttpOperator): task_get_op> on 2023-09-18 00:00:00+00:00
+[2023-10-03T09:39:30.674+0000] {standard_task_runner.py:57} INFO - Started process 2701 to run task
+[2023-10-03T09:39:30.863+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'task_get_op', 'scheduled__2023-09-18T00:00:00+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmprk3mh80f']
+[2023-10-03T09:39:30.900+0000] {standard_task_runner.py:85} INFO - Job 100: Subtask task_get_op
+[2023-10-03T09:39:31.940+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:39:33.328+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2023-10-03T09:39:34.953+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='task_get_op' AIRFLOW_CTX_EXECUTION_DATE='2023-09-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-18T00:00:00+00:00'
+[2023-10-03T09:39:34.962+0000] {http.py:123} INFO - Calling HTTP method
+[2023-10-03T09:39:35.088+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T09:39:37.083+0000] {http.py:127} INFO - {"count":0,"next":null,"previous":null,"results":[]}
+[2023-10-03T09:39:37.605+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=task_get_op, execution_date=20230918T000000, start_date=20231003T093929, end_date=20231003T093937
+[2023-10-03T09:39:37.789+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T09:39:37.928+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:02:21.519+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:21.815+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:21.822+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:02:22.088+0000] {taskinstance.py:1350} INFO - Executing <Task(SimpleHttpOperator): task_get_op> on 2023-09-18 00:00:00+00:00
+[2023-10-03T10:02:22.167+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'task_get_op', 'scheduled__2023-09-18T00:00:00+00:00', '--job-id', '216', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmp49b0zpx1']
+[2023-10-03T10:02:22.168+0000] {standard_task_runner.py:85} INFO - Job 216: Subtask task_get_op
+[2023-10-03T10:02:22.118+0000] {standard_task_runner.py:57} INFO - Started process 3329 to run task
+[2023-10-03T10:02:22.889+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:02:23.331+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2023-10-03T10:02:23.460+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='task_get_op' AIRFLOW_CTX_EXECUTION_DATE='2023-09-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-18T00:00:00+00:00'
+[2023-10-03T10:02:23.462+0000] {http.py:123} INFO - Calling HTTP method
+[2023-10-03T10:02:23.542+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T10:02:24.319+0000] {http.py:127} INFO - {"count":0,"next":null,"previous":null,"results":[]}
+[2023-10-03T10:02:24.785+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=task_get_op, execution_date=20230918T000000, start_date=20231003T100221, end_date=20231003T100224
+[2023-10-03T10:02:25.173+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:02:25.879+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:05:59.340+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T10:05:59.648+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T10:05:59.648+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:05:59.993+0000] {taskinstance.py:1350} INFO - Executing <Task(SimpleHttpOperator): task_get_op> on 2023-09-18 00:00:00+00:00
+[2023-10-03T10:06:00.029+0000] {standard_task_runner.py:57} INFO - Started process 3562 to run task
+[2023-10-03T10:06:00.185+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'task_get_op', 'scheduled__2023-09-18T00:00:00+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmphwjna9vt']
+[2023-10-03T10:06:00.206+0000] {standard_task_runner.py:85} INFO - Job 305: Subtask task_get_op
+[2023-10-03T10:06:00.926+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:06:01.393+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2023-10-03T10:06:02.228+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='task_get_op' AIRFLOW_CTX_EXECUTION_DATE='2023-09-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-18T00:00:00+00:00'
+[2023-10-03T10:06:02.234+0000] {http.py:123} INFO - Calling HTTP method
+[2023-10-03T10:06:02.330+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T10:06:02.836+0000] {http.py:127} INFO - {"count":0,"next":null,"previous":null,"results":[]}
+[2023-10-03T10:06:02.985+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=task_get_op, execution_date=20230918T000000, start_date=20231003T100559, end_date=20231003T100602
+[2023-10-03T10:06:03.401+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:06:04.109+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:16:32.685+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T10:16:33.066+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [queued]>
+[2023-10-03T10:16:33.089+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:16:33.440+0000] {taskinstance.py:1350} INFO - Executing <Task(SimpleHttpOperator): task_get_op> on 2023-09-18 00:00:00+00:00
+[2023-10-03T10:16:33.546+0000] {standard_task_runner.py:57} INFO - Started process 3932 to run task
+[2023-10-03T10:16:33.611+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'task_get_op', 'scheduled__2023-09-18T00:00:00+00:00', '--job-id', '396', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmp3mczcipc']
+[2023-10-03T10:16:33.634+0000] {standard_task_runner.py:85} INFO - Job 396: Subtask task_get_op
+[2023-10-03T10:16:34.293+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.task_get_op scheduled__2023-09-18T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:16:34.692+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:205: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2023-10-03T10:16:35.412+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='task_get_op' AIRFLOW_CTX_EXECUTION_DATE='2023-09-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-18T00:00:00+00:00'
+[2023-10-03T10:16:35.419+0000] {http.py:123} INFO - Calling HTTP method
+[2023-10-03T10:16:35.618+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T10:16:36.606+0000] {http.py:127} INFO - {"count":0,"next":null,"previous":null,"results":[]}
+[2023-10-03T10:16:36.757+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=task_get_op, execution_date=20230918T000000, start_date=20231003T101632, end_date=20231003T101636
+[2023-10-03T10:16:36.965+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:16:37.328+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check

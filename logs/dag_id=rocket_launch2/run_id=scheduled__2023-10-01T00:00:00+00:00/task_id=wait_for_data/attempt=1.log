@@ -1,0 +1,165 @@
+[2023-10-03T08:04:18.536+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:04:18.652+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:04:18.652+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T08:04:18.747+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T08:04:18.759+0000] {standard_task_runner.py:57} INFO - Started process 866 to run task
+[2023-10-03T08:04:18.828+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpitqhh3lv']
+[2023-10-03T08:04:18.835+0000] {standard_task_runner.py:85} INFO - Job 26: Subtask wait_for_data
+[2023-10-03T08:04:19.134+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T08:04:19.504+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T08:04:19.505+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T08:04:19.533+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T08:04:19.978+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T08:04:19.996+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T080418, end_date=20231003T080419
+[2023-10-03T08:04:20.114+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T08:04:20.148+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T08:16:10.050+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:16:10.168+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:16:10.172+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T08:16:10.285+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T08:16:10.291+0000] {standard_task_runner.py:57} INFO - Started process 1081 to run task
+[2023-10-03T08:16:10.305+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpinigkjtp']
+[2023-10-03T08:16:10.318+0000] {standard_task_runner.py:85} INFO - Job 32: Subtask wait_for_data
+[2023-10-03T08:16:10.514+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T08:16:10.932+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T08:16:10.932+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T08:16:10.958+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T08:16:11.549+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T08:16:11.558+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T081610, end_date=20231003T081611
+[2023-10-03T08:16:11.638+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T08:16:11.652+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T08:44:29.506+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:44:29.544+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:44:29.546+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T08:44:29.632+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T08:44:29.640+0000] {standard_task_runner.py:57} INFO - Started process 1593 to run task
+[2023-10-03T08:44:29.644+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpy6p120ly']
+[2023-10-03T08:44:29.645+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask wait_for_data
+[2023-10-03T08:44:29.757+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T08:44:29.907+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T08:44:29.909+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T08:44:29.917+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T08:44:31.357+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T08:44:31.368+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T084429, end_date=20231003T084431
+[2023-10-03T08:44:31.404+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T08:44:31.435+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T08:48:09.437+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:48:09.452+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:48:09.452+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T08:48:09.482+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T08:48:09.489+0000] {standard_task_runner.py:57} INFO - Started process 1673 to run task
+[2023-10-03T08:48:09.491+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmp6jor426k']
+[2023-10-03T08:48:09.492+0000] {standard_task_runner.py:85} INFO - Job 44: Subtask wait_for_data
+[2023-10-03T08:48:09.609+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T08:48:09.766+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T08:48:09.767+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T08:48:09.774+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T08:48:10.325+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T08:48:10.454+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T084809, end_date=20231003T084810
+[2023-10-03T08:48:10.747+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T08:48:10.853+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T08:54:50.740+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:54:50.852+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T08:54:50.852+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T08:54:51.098+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T08:54:51.118+0000] {standard_task_runner.py:57} INFO - Started process 1808 to run task
+[2023-10-03T08:54:51.133+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmp1nu2txgz']
+[2023-10-03T08:54:51.152+0000] {standard_task_runner.py:85} INFO - Job 53: Subtask wait_for_data
+[2023-10-03T08:54:51.360+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T08:54:51.592+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T08:54:51.593+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T08:54:51.616+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T08:54:52.143+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T08:54:52.210+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T085450, end_date=20231003T085452
+[2023-10-03T08:54:52.410+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T08:54:52.521+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T09:25:23.157+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:25:23.197+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:25:23.197+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:25:23.234+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T09:25:23.241+0000] {standard_task_runner.py:57} INFO - Started process 2370 to run task
+[2023-10-03T09:25:23.243+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpuvzmjol4']
+[2023-10-03T09:25:23.244+0000] {standard_task_runner.py:85} INFO - Job 65: Subtask wait_for_data
+[2023-10-03T09:25:23.306+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:25:23.415+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T09:25:23.416+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T09:25:23.425+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T09:25:25.352+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T09:25:25.361+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T092523, end_date=20231003T092525
+[2023-10-03T09:25:25.386+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T09:25:25.416+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T09:37:36.046+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:37:36.063+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:37:36.063+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:37:36.113+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T09:37:36.119+0000] {standard_task_runner.py:57} INFO - Started process 2603 to run task
+[2023-10-03T09:37:36.134+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmp5qp76mhr']
+[2023-10-03T09:37:36.135+0000] {standard_task_runner.py:85} INFO - Job 74: Subtask wait_for_data
+[2023-10-03T09:37:36.231+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:37:36.407+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T09:37:36.407+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T09:37:36.421+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T09:37:36.719+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T09:37:36.729+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T093736, end_date=20231003T093736
+[2023-10-03T09:37:36.755+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T09:37:36.784+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T09:39:59.207+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:39:59.260+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:39:59.261+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:39:59.339+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T09:39:59.366+0000] {standard_task_runner.py:57} INFO - Started process 2767 to run task
+[2023-10-03T09:39:59.422+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '132', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpcjfyrvu4']
+[2023-10-03T09:39:59.423+0000] {standard_task_runner.py:85} INFO - Job 132: Subtask wait_for_data
+[2023-10-03T09:39:59.572+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:39:59.783+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T09:39:59.784+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T09:39:59.833+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T09:40:00.190+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T09:40:00.208+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T093959, end_date=20231003T094000
+[2023-10-03T09:40:00.244+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T09:40:00.284+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:02:50.753+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:50.779+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:50.780+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:02:50.817+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T10:02:50.822+0000] {standard_task_runner.py:57} INFO - Started process 3400 to run task
+[2023-10-03T10:02:50.824+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '255', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpltwwi_ea']
+[2023-10-03T10:02:50.825+0000] {standard_task_runner.py:85} INFO - Job 255: Subtask wait_for_data
+[2023-10-03T10:02:50.930+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:02:51.137+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T10:02:51.141+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T10:02:51.160+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T10:02:51.468+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T10:02:51.481+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T100250, end_date=20231003T100251
+[2023-10-03T10:02:51.533+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:02:51.619+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:06:30.404+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T10:06:30.434+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T10:06:30.435+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:06:30.463+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T10:06:30.474+0000] {standard_task_runner.py:57} INFO - Started process 3651 to run task
+[2023-10-03T10:06:30.479+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '348', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpqwmqpa03']
+[2023-10-03T10:06:30.480+0000] {standard_task_runner.py:85} INFO - Job 348: Subtask wait_for_data
+[2023-10-03T10:06:30.641+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:06:30.884+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T10:06:30.888+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T10:06:30.929+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T10:06:31.191+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T10:06:31.219+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T100630, end_date=20231003T100631
+[2023-10-03T10:06:31.267+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:06:31.314+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:16:58.184+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T10:16:58.381+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T10:16:58.381+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:16:58.593+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-10-01 00:00:00+00:00
+[2023-10-03T10:16:58.630+0000] {standard_task_runner.py:57} INFO - Started process 4002 to run task
+[2023-10-03T10:16:58.667+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'wait_for_data', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '436', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpg_u0obp6']
+[2023-10-03T10:16:58.676+0000] {standard_task_runner.py:85} INFO - Job 436: Subtask wait_for_data
+[2023-10-03T10:16:59.012+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.wait_for_data scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:16:59.470+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T10:16:59.475+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T10:16:59.538+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T10:16:59.971+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T10:17:00.014+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=wait_for_data, execution_date=20231001T000000, start_date=20231003T101658, end_date=20231003T101700
+[2023-10-03T10:17:00.156+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:17:00.428+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

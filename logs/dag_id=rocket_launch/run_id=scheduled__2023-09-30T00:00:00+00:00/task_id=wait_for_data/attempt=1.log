@@ -1,0 +1,15 @@
+[2023-10-03T07:54:15.070+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch.wait_for_data scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T07:54:15.091+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch.wait_for_data scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T07:54:15.092+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T07:54:15.135+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): wait_for_data> on 2023-09-30 00:00:00+00:00
+[2023-10-03T07:54:15.142+0000] {standard_task_runner.py:57} INFO - Started process 679 to run task
+[2023-10-03T07:54:15.153+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch', 'wait_for_data', 'scheduled__2023-09-30T00:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpp_9o82ht']
+[2023-10-03T07:54:15.155+0000] {standard_task_runner.py:85} INFO - Job 22: Subtask wait_for_data
+[2023-10-03T07:54:15.266+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch.wait_for_data scheduled__2023-09-30T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T07:54:15.635+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2023-09-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-30T00:00:00+00:00'
+[2023-10-03T07:54:15.635+0000] {http.py:122} INFO - Poking: 
+[2023-10-03T07:54:15.650+0000] {base.py:73} INFO - Using connection ID 'thespacedevs_dev' for task execution.
+[2023-10-03T07:54:16.188+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-10-03T07:54:16.204+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch, task_id=wait_for_data, execution_date=20230930T000000, start_date=20231003T075415, end_date=20231003T075416
+[2023-10-03T07:54:16.308+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T07:54:16.359+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

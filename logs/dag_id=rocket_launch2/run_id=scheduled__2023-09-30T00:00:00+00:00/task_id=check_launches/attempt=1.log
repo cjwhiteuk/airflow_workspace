@@ -1,0 +1,54 @@
+[2023-10-03T09:53:23.579+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T09:53:23.640+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T09:53:23.640+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:53:23.791+0000] {taskinstance.py:1350} INFO - Executing <Task(ShortCircuitOperator): check_launches> on 2023-09-30 00:00:00+00:00
+[2023-10-03T09:53:23.823+0000] {standard_task_runner.py:57} INFO - Started process 3112 to run task
+[2023-10-03T09:53:23.841+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'check_launches', 'scheduled__2023-09-30T00:00:00+00:00', '--job-id', '190', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpqg0jr0oi']
+[2023-10-03T09:53:23.864+0000] {standard_task_runner.py:85} INFO - Job 190: Subtask check_launches
+[2023-10-03T09:53:24.017+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:53:24.391+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='check_launches' AIRFLOW_CTX_EXECUTION_DATE='2023-09-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-30T00:00:00+00:00'
+[2023-10-03T09:53:24.462+0000] {python.py:183} INFO - Done. Returned value was: True
+[2023-10-03T09:53:24.465+0000] {python.py:253} INFO - Condition result is True
+[2023-10-03T09:53:24.465+0000] {python.py:256} INFO - Proceeding with downstream tasks...
+[2023-10-03T09:53:24.599+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=check_launches, execution_date=20230930T000000, start_date=20231003T095323, end_date=20231003T095324
+[2023-10-03T09:53:24.702+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T09:53:24.749+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:02:53.577+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:53.605+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:53.605+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:02:53.672+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): check_launches> on 2023-09-30 00:00:00+00:00
+[2023-10-03T10:02:53.679+0000] {standard_task_runner.py:57} INFO - Started process 3409 to run task
+[2023-10-03T10:02:53.687+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'check_launches', 'scheduled__2023-09-30T00:00:00+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpztmoj0wj']
+[2023-10-03T10:02:53.689+0000] {standard_task_runner.py:85} INFO - Job 260: Subtask check_launches
+[2023-10-03T10:02:53.791+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:02:54.007+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='check_launches' AIRFLOW_CTX_EXECUTION_DATE='2023-09-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-30T00:00:00+00:00'
+[2023-10-03T10:02:54.017+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-10-03T10:02:54.024+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=check_launches, execution_date=20230930T000000, start_date=20231003T100253, end_date=20231003T100254
+[2023-10-03T10:02:54.060+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:02:54.080+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:06:28.565+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T10:06:28.605+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T10:06:28.611+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:06:28.659+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): check_launches> on 2023-09-30 00:00:00+00:00
+[2023-10-03T10:06:28.666+0000] {standard_task_runner.py:57} INFO - Started process 3647 to run task
+[2023-10-03T10:06:28.671+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'check_launches', 'scheduled__2023-09-30T00:00:00+00:00', '--job-id', '347', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpnriw18xt']
+[2023-10-03T10:06:28.671+0000] {standard_task_runner.py:85} INFO - Job 347: Subtask check_launches
+[2023-10-03T10:06:28.829+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:06:29.044+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='check_launches' AIRFLOW_CTX_EXECUTION_DATE='2023-09-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-30T00:00:00+00:00'
+[2023-10-03T10:06:29.062+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-10-03T10:06:29.075+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=check_launches, execution_date=20230930T000000, start_date=20231003T100628, end_date=20231003T100629
+[2023-10-03T10:06:29.136+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:06:29.185+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:17:04.240+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T10:17:04.288+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [queued]>
+[2023-10-03T10:17:04.293+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:17:04.350+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): check_launches> on 2023-09-30 00:00:00+00:00
+[2023-10-03T10:17:04.366+0000] {standard_task_runner.py:57} INFO - Started process 4020 to run task
+[2023-10-03T10:17:04.399+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'check_launches', 'scheduled__2023-09-30T00:00:00+00:00', '--job-id', '441', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpjpt4zcct']
+[2023-10-03T10:17:04.402+0000] {standard_task_runner.py:85} INFO - Job 441: Subtask check_launches
+[2023-10-03T10:17:04.505+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.check_launches scheduled__2023-09-30T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:17:04.698+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='check_launches' AIRFLOW_CTX_EXECUTION_DATE='2023-09-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-30T00:00:00+00:00'
+[2023-10-03T10:17:04.719+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-10-03T10:17:04.738+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=rocket_launch2, task_id=check_launches, execution_date=20230930T000000, start_date=20231003T101704, end_date=20231003T101704
+[2023-10-03T10:17:04.828+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T10:17:04.906+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,92 @@
+[2023-10-03T09:53:16.211+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T09:53:16.292+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T09:53:16.300+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:53:16.405+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): preprocess_data> on 2023-09-21 00:00:00+00:00
+[2023-10-03T09:53:16.462+0000] {standard_task_runner.py:57} INFO - Started process 3097 to run task
+[2023-10-03T09:53:16.565+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'preprocess_data', 'scheduled__2023-09-21T00:00:00+00:00', '--job-id', '182', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpe83334nc']
+[2023-10-03T09:53:16.582+0000] {standard_task_runner.py:85} INFO - Job 182: Subtask preprocess_data
+[2023-10-03T09:53:17.257+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:53:18.524+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2023-09-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-21T00:00:00+00:00'
+[2023-10-03T09:53:18.530+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/rocket_launch.py", line 53, in _preprocess_data
+    result_by_key = task_instance.xcom_pull(task_ids="task_get_op", key="return_value")
+NameError: name 'task_instance' is not defined
+[2023-10-03T09:53:18.585+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=rocket_launch2, task_id=preprocess_data, execution_date=20230921T000000, start_date=20231003T095316, end_date=20231003T095318
+[2023-10-03T09:53:18.716+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 182 for task preprocess_data (name 'task_instance' is not defined; 3097)
+[2023-10-03T09:53:18.805+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-10-03T09:53:18.912+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:02:42.961+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:43.144+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T10:02:43.146+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:02:43.270+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): preprocess_data> on 2023-09-21 00:00:00+00:00
+[2023-10-03T10:02:43.276+0000] {standard_task_runner.py:57} INFO - Started process 3387 to run task
+[2023-10-03T10:02:43.358+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'preprocess_data', 'scheduled__2023-09-21T00:00:00+00:00', '--job-id', '246', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpug8awmrg']
+[2023-10-03T10:02:43.359+0000] {standard_task_runner.py:85} INFO - Job 246: Subtask preprocess_data
+[2023-10-03T10:02:43.881+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:02:44.637+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2023-09-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-21T00:00:00+00:00'
+[2023-10-03T10:02:44.638+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/rocket_launch.py", line 63, in _preprocess_data
+    result_by_key = task_instance.xcom_pull(task_ids="task_get_op", key="return_value")
+NameError: name 'task_instance' is not defined
+[2023-10-03T10:02:44.681+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=rocket_launch2, task_id=preprocess_data, execution_date=20230921T000000, start_date=20231003T100243, end_date=20231003T100244
+[2023-10-03T10:02:44.846+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 246 for task preprocess_data (name 'task_instance' is not defined; 3387)
+[2023-10-03T10:02:44.895+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-10-03T10:02:45.015+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:06:19.741+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T10:06:19.941+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T10:06:19.954+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:06:20.204+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): preprocess_data> on 2023-09-21 00:00:00+00:00
+[2023-10-03T10:06:20.222+0000] {standard_task_runner.py:57} INFO - Started process 3629 to run task
+[2023-10-03T10:06:20.255+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'preprocess_data', 'scheduled__2023-09-21T00:00:00+00:00', '--job-id', '334', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmp9unm6zxp']
+[2023-10-03T10:06:20.269+0000] {standard_task_runner.py:85} INFO - Job 334: Subtask preprocess_data
+[2023-10-03T10:06:20.858+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:06:21.651+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2023-09-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-21T00:00:00+00:00'
+[2023-10-03T10:06:21.694+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/rocket_launch.py", line 65, in _preprocess_data
+    result_filtered = _extract_relevant_data(result_dict)
+  File "/opt/airflow/dags/rocket_launch.py", line 56, in _extract_relevant_data
+    "status": x.get("status").get("abbrev"),
+AttributeError: 'NoneType' object has no attribute 'get'
+[2023-10-03T10:06:21.739+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=rocket_launch2, task_id=preprocess_data, execution_date=20230921T000000, start_date=20231003T100619, end_date=20231003T100621
+[2023-10-03T10:06:21.899+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 334 for task preprocess_data ('NoneType' object has no attribute 'get'; 3629)
+[2023-10-03T10:06:21.981+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-10-03T10:06:22.036+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T10:16:56.441+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T10:16:56.575+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [queued]>
+[2023-10-03T10:16:56.578+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T10:16:56.737+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): preprocess_data> on 2023-09-21 00:00:00+00:00
+[2023-10-03T10:16:56.789+0000] {standard_task_runner.py:57} INFO - Started process 3995 to run task
+[2023-10-03T10:16:56.825+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'preprocess_data', 'scheduled__2023-09-21T00:00:00+00:00', '--job-id', '431', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpeld6b4on']
+[2023-10-03T10:16:56.875+0000] {standard_task_runner.py:85} INFO - Job 431: Subtask preprocess_data
+[2023-10-03T10:16:57.448+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.preprocess_data scheduled__2023-09-21T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T10:16:58.485+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='preprocess_data' AIRFLOW_CTX_EXECUTION_DATE='2023-09-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-21T00:00:00+00:00'
+[2023-10-03T10:16:58.545+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/rocket_launch.py", line 64, in _preprocess_data
+    response_dict = json.loads(response)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+[2023-10-03T10:16:58.641+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=rocket_launch2, task_id=preprocess_data, execution_date=20230921T000000, start_date=20231003T101656, end_date=20231003T101658
+[2023-10-03T10:16:58.792+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 431 for task preprocess_data (the JSON object must be str, bytes or bytearray, not NoneType; 3995)
+[2023-10-03T10:16:58.864+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-10-03T10:16:59.008+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

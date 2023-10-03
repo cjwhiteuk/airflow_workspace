@@ -1,0 +1,60 @@
+[2023-10-03T09:25:29.692+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:25:29.700+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:25:29.700+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:25:29.721+0000] {taskinstance.py:1350} INFO - Executing <Task(BranchPythonOperator): branching> on 2023-10-01 00:00:00+00:00
+[2023-10-03T09:25:29.726+0000] {standard_task_runner.py:57} INFO - Started process 2383 to run task
+[2023-10-03T09:25:29.728+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'branching', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmpp016dbh0']
+[2023-10-03T09:25:29.729+0000] {standard_task_runner.py:85} INFO - Job 72: Subtask branching
+[2023-10-03T09:25:29.779+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:25:29.869+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='branching' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T09:25:29.879+0000] {python.py:183} INFO - Done. Returned value was: False
+[2023-10-03T09:25:29.880+0000] {python.py:216} INFO - Branch callable return False
+[2023-10-03T09:25:29.881+0000] {skipmixin.py:161} INFO - Following branch False
+[2023-10-03T09:25:29.889+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 217, in execute
+    self.skip_all_except(context["ti"], branch)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/skipmixin.py", line 178, in skip_all_except
+    "'branch_task_ids' must be either None, a task ID, or an Iterable of IDs, "
+airflow.exceptions.AirflowException: 'branch_task_ids' must be either None, a task ID, or an Iterable of IDs, but got 'bool'.
+[2023-10-03T09:25:29.891+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=rocket_launch2, task_id=branching, execution_date=20231001T000000, start_date=20231003T092529, end_date=20231003T092529
+[2023-10-03T09:25:29.917+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 72 for task branching ('branch_task_ids' must be either None, a task ID, or an Iterable of IDs, but got 'bool'.; 2383)
+[2023-10-03T09:25:29.943+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-10-03T09:25:29.959+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T09:37:40.628+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:37:40.660+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:37:40.661+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:37:40.739+0000] {taskinstance.py:1350} INFO - Executing <Task(BranchPythonOperator): branching> on 2023-10-01 00:00:00+00:00
+[2023-10-03T09:37:40.761+0000] {standard_task_runner.py:57} INFO - Started process 2623 to run task
+[2023-10-03T09:37:40.768+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'branching', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmprv1l8l17']
+[2023-10-03T09:37:40.770+0000] {standard_task_runner.py:85} INFO - Job 81: Subtask branching
+[2023-10-03T09:37:40.965+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:37:41.282+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='branching' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T09:37:41.321+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 215, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/rocket_launch.py", line 41, in _check_count
+    raise AirflowSkipException(f"No launches on {context['ds']}")
+NameError: name 'context' is not defined
+[2023-10-03T09:37:41.331+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=rocket_launch2, task_id=branching, execution_date=20231001T000000, start_date=20231003T093740, end_date=20231003T093741
+[2023-10-03T09:37:41.370+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 81 for task branching (name 'context' is not defined; 2623)
+[2023-10-03T09:37:41.408+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-10-03T09:37:41.433+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-03T09:40:04.989+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:40:05.083+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [queued]>
+[2023-10-03T09:40:05.085+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 1
+[2023-10-03T09:40:05.116+0000] {taskinstance.py:1350} INFO - Executing <Task(BranchPythonOperator): branching> on 2023-10-01 00:00:00+00:00
+[2023-10-03T09:40:05.150+0000] {standard_task_runner.py:57} INFO - Started process 2783 to run task
+[2023-10-03T09:40:05.181+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'rocket_launch2', 'branching', 'scheduled__2023-10-01T00:00:00+00:00', '--job-id', '140', '--raw', '--subdir', 'DAGS_FOLDER/rocket_launch.py', '--cfg-path', '/tmp/tmp8ommjmc6']
+[2023-10-03T09:40:05.182+0000] {standard_task_runner.py:85} INFO - Job 140: Subtask branching
+[2023-10-03T09:40:05.444+0000] {task_command.py:410} INFO - Running <TaskInstance: rocket_launch2.branching scheduled__2023-10-01T00:00:00+00:00 [running]> on host e870058fa168
+[2023-10-03T09:40:05.731+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='rocket_launch2' AIRFLOW_CTX_TASK_ID='branching' AIRFLOW_CTX_EXECUTION_DATE='2023-10-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-01T00:00:00+00:00'
+[2023-10-03T09:40:05.752+0000] {taskinstance.py:1454} INFO - No launches on 2023-10-01
+[2023-10-03T09:40:05.763+0000] {taskinstance.py:1373} INFO - Marking task as SKIPPED. dag_id=rocket_launch2, task_id=branching, execution_date=20231001T000000, start_date=20231003T094005, end_date=20231003T094005
+[2023-10-03T09:40:05.811+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-10-03T09:40:05.846+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
